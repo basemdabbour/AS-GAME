@@ -1,2 +1,2 @@
 # AS-GAME
-Master project - advance software game 
+my Github repository - master project
