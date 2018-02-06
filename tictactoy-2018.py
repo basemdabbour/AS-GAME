@@ -1,9 +1,13 @@
 # Tic Tac Toe
-
+#TEST CODE FOR SONAR 
 #import random
 
+<<<<<<< HEAD
+#import random
+=======
+>>>>>>> b98b379d126f251dab5d1b1033afa56ba5b0dfff
 
-def Gameboard(board):
+#def Gameboard(board):
     # This function prints out the board that it was passed.
 
     # "board" is a list of 10 strings representing the board (ignore index 0)
@@ -20,7 +24,7 @@ def Gameboard(board):
     print('   |   |')
 
 
-def inputPlayerletter():
+#def inputPlayerletter():
     # Lts the player type which letter they want to be.
     # Returns a list with the player’s letter as the first item, and the computer's letter as the second.
     letter = ''
