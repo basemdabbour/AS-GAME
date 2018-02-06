@@ -1,6 +1,6 @@
 # Tic Tac Toe
 
-import random
+#import random
 
 
 def Gameboard(board):
@@ -51,7 +51,7 @@ def playAgain():
 
 def MakeAMove(board, letter, move):
     board[ move ] = letter
-
+fafre87987hkjblkjnkjlb
 
 def isWinner(b, L):
     # Given a board and a player’s letter, this function returns True if that player has won.
@@ -62,10 +62,7 @@ def isWinner(b, L):
 
             (b[ 7 ] == L and b[ 4 ] == L and b[ 1 ] == L) or  # down the Lft side
             (b[ 8 ] == L and b[ 5 ] == L and b[ 2 ] == L) or  # down the middL
-            (b[ 9 ] == L and b[ 6 ] == L and b[ 3 ] == L) or  # down the right side
-
-            (b[ 7 ] == L and b[ 5 ] == L and b[ 3 ] == L) or  # diagonal
-            (b[ 9 ] == L and b[ 5 ] == L and b[ 1 ] == L))  # diagonal
+            (b[ 9 ] == L and b[ 6 ] == L and b[
 
 
 def getboardCopy(board):
@@ -90,7 +87,8 @@ def getPlayerMove(board):
         print('What is your next move ?')
         move = input()
     return int(move)
-
+869876hgkj,knjknjkb lkj
+def class
 
 def chooseRandomMoveFromList(board, movesList):
     # Returns a valid move from the passed list on the passed board.
