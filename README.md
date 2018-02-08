@@ -61,17 +61,29 @@ In this program, the Tic Tac Toe board is simply represented as a list of string
 
 Functions:
 •	GameBoard() : function to draw the board of strings (1 till 9)
+
 •	inputPlayerletter() : function so the player can choose which letter will start with “X” or “O” , and the computer will get the second letter.
+
 •	whoGoesFirst() : function to randomly choose the player who will go first in the game , in this case player or computer 
+
 •	playAgain() : Function to repeat the game again by using “random.randint(0, 1) == 0” , if (0) the computer will have the first move , (1) the player will have the first move 
+
 •	MakeAMove() : Function to pass the parameter for the borad[ ] with chosen letter by player or computer 
+
 •	isWinner(): Function with long return line to check if there is three spaces in board filled with same letter horizontally , vertically or diagonally 
+
 •	getboardCopy() : Function to make copy of the board of TTT in the game , making append to the board with new copy of it without changing the original board and moves has been played before.
-•	FreeSpace(): Function to check if the entire board filled with sting or not , make sure to choose the right empty slot to make a move, otherwise a message will pop up to ask for available move 
-•	getPlayerMove(): Function to ask the player to enter the number of the space that wants to move on , the (while) loop here makes sure that the player is choosing the empty space each move and check if the space is already taken before or not by calling FreeSpace() , and finally return the move as integer from string 
+
+•	FreeSpace(): Function to check if the entire board filled with sting or not , make sure to choose the right empty slot to make a move, otherwise a message will pop up to ask for available move.
+
+•	getPlayerMove(): Function to ask the player to enter the number of the space that wants to move on , the (while) loop here makes sure that the player is choosing the empty space each move and check if the space is already taken before or not by calling FreeSpace() , and finally return the move as integer from string.
+
 •	 chooseRandomMoveFromList(): Function will first check that the space is valid to make a move on , and returns a valid move from the passed list on the passed board and None in case of no valid/true move made.
-•	getComputerMove() :The algorithm which has been used in TTT game is simple algorithm to compute the results , this algorithm is implemented and used in the getComputerMove() function
+
+•	getComputerMove() :The algorithm which has been used in TTT game is simple algorithm to compute the results , this algorithm is implemented and used in the getComputerMove() function.
+
 •	isboardFull() : Function that returns True in case all moves(10 strings 1-9, index 0 not used) has already passed through with “X” or “O” , and False in case of any spaces found not filled yet , in other words , isbordFull() invert function of FreeSpace(). 
+
 
 # 6.	UML Diagrams :
 •	Class Diagram :
