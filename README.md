@@ -202,12 +202,13 @@ There are several examples of public DSL which are used a lot :
 •	PlantUML – A DSL to draw UML diagrams :PlantUML Can be used to define UML diagrams of different kinds. For example we can define a sequence diagram as per the following DSL Demo example snippet:
 
 @startuml
-actor Customer1     
-actor Customer2   
-database database  
-Customer1 -> Supplier: Ask a refund    
-Supplier -> database: Verify the data  
-Supplier -> MyUser: Issue a refund  
+actor Customer1
+actor customer2
+database database 
+Customer 1 -> Supplier : Request a refund
+Supplier -> database: Verify data
+Supplier -> Customer1
+Supplier -> Customer2
 @enduml
 
 From that code, we will get the following sequance diagram :
