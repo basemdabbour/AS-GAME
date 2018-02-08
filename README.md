@@ -100,7 +100,9 @@ By creating new project with token name either existing one or generate new whic
 
 ![image](https://user-images.githubusercontent.com/32684082/35982469-31cd12e4-0cf0-11e8-913e-22dd2df0283a.png)
 
-the following command will scan the code and do the test 
+the following command will scan the code and do the test:
+
+
 sonar-scanner.bat -Dsonar.projectKey=AS-GAME -Dsonar.organization=basemdabbour-github -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=ca8628234e17b3cb7011afc999c047e0226ac2d7
 
 and the result will be like this :
