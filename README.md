@@ -60,7 +60,11 @@ And when the board fills up with neither player winning the game break even.
 
 # 3.	The Tic Tac Toe source code:
 Please copy the below code to your shell and run it:
+<<<<<<< HEAD
 [source code]( https://github.com/basemdabbour/AS-GAME/blob/master/tictactoe-DS-AS-2018.py)
+=======
+[source code]( https://github.com/basemdabbour/AS-GAME/blob/master/tictactoy-DS-AS-2018.py)
+>>>>>>> df3c81652a667754b5c94e71badbdb28847d36bc
 
 
 
