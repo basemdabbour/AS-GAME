@@ -1,14 +1,16 @@
 # AS-GAME
 my Github repository - master project
+ # AS-GAME
+my Github repository - master project
  
 Beuth University of Applied Science
 Advance Software – Game Project 
 Prof. Dr. Edlich Stefan 
 
 Tic Tac Toy – Game Project 
-Student : Basem Dabbour ,GitHub : https://github.com/basemdabbour/AS-GAME
+#Student : Basem Dabbour
 
->>>Index<<<
+#>>>Index<<<
 
 1.	........Introduction 
 2.	.........Sample of Run Program 
