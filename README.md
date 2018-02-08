@@ -201,7 +201,6 @@ There are several examples of public DSL which are used a lot :
 •	UML – visual modeling
 •	PlantUML – A DSL to draw UML diagrams :PlantUML Can be used to define UML diagrams of different kinds. For example we can define a sequence diagram as per the following DSL Demo example snippet:
 
-
 @startuml
 actor Customer1     
 actor Customer2   
