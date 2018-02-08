@@ -20,10 +20,10 @@ Student : Basem Dabbour
 # 7.	.........Metrics (SonarQube, SonarCould,Sonar, Sonarlint)
 # 8.	.........Clean Code development
 # 9.	......... Continous Delivery
-# 10.	AOP jointpoints 
-# 11.	DSL Demo example
-# 12.	Logic Solver 
-# 13.	Scala Code 
+# 10.	..........AOP jointpoints 
+# 11.	..........DSL Demo example
+# 12.	..........Logic Solver 
+# 13.	..........Scala Code 
 
 
 
