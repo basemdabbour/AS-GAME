@@ -2,28 +2,32 @@
 # My Github repository - master project
 
 Beuth University of Applied Science
+
 Advance Software – Game Project 
+
 Prof. Dr. Edlich Stefan 
+
 Student: Basem Dabbour
+
 GitHub : https://github.com/basemdabbour/AS-GAME
 
-#Tic Tac Toe – Game Project 
+# Tic Tac Toe – Game Project 
 
-#Index
+# Index
 
-#1.	........Introduction 
-#2.	.........Sample of Run Program 
-#3.	.........Source Code 
-#4.	.........Game Design
-#5.	.........Details of the Program
-#6.	.........UML Diagrams 
-#7.	.........Metrics (SonarQube, SonarCould,Sonar, Sonarlint)
-#8.	.........Clean Code development
-#9.	......... Continuous Delivery
-#10.	AOP jointpoints 
-#11.	DSL Demo example
-#12.	Logic Solver 
-#13.	Scala Code 
+# 1.	........Introduction 
+# 2.	.........Sample of Run Program 
+# 3.	.........Source Code 
+# 4.	.........Game Design
+# 5.	.........Details of the Program
+# 6.	.........UML Diagrams 
+# 7.	.........Metrics (SonarQube, SonarCould,Sonar, Sonarlint)
+# 8.	.........Clean Code development
+# 9.	......... Continuous Delivery
+# 10.	AOP jointpoints 
+# 11.	DSL Demo example
+# 12.	Logic Solver 
+# 13.	Scala Code 
 
 
 
@@ -32,7 +36,7 @@ GitHub : https://github.com/basemdabbour/AS-GAME
 
 
 
-#1.	Introduction: 
+# 1.	Introduction: 
 
 
 
@@ -46,7 +50,7 @@ And when the board fills up with neither player winning the game break even.
 
 
 
-#2.	Simple run for Tic Tac Toe Game 
+# 2.	Simple run for Tic Tac Toe Game 
 
 
  
@@ -59,7 +63,7 @@ And when the board fills up with neither player winning the game break even.
 
 
 
-#3.	The Tic Tac Toe source code:
+# 3.	The Tic Tac Toe source code:
 Please copy the below code to your shell and run it:
 [source code]( https://github.com/basemdabbour/AS-GAME/blob/master/tictactoy-DS-AS-2018.py)
 
@@ -69,7 +73,7 @@ Please copy the below code to your shell and run it:
 
 
 
-#4.	Game design:
+# 4.	Game design:
 
 
 The below figure shows how the Flowchart for this Tic Tac Toe looks like, in this game the player (you) will choose between "X" and "O" and who take the first turn will be randomly chosen by using random module in python “ import random ”
@@ -91,7 +95,7 @@ The below figure shows how the Flowchart for this Tic Tac Toe looks like, in thi
  
  
 
-#5.	Game in details with functions :
+# 5.	Game in details with functions :
 
 
 In this program, the Tic Tac Toe board is simply represented as a list of strings. Each string will represent one of the nine spaces on the board (either be 'X' for the X player, 'O' for the O player, or a single space ' ' for a blank space.). To make it easier to remember which index in the list is for which space, same as the numbers on a keyboard’s number keypad, as per the Figure 4 we can also agree that list of 10 strings stored in variable board will make board [5] in center, board [1] in bottom left and board [6] in the right side and so on so forth 
@@ -140,7 +144,7 @@ In this program, the Tic Tac Toe board is simply represented as a list of string
 ***
 
 
-6.	**UML Diagrams:**
+# 6.	**UML Diagrams:**
 
 
 •	Class Diagram:
@@ -161,7 +165,7 @@ In this program, the Tic Tac Toe board is simply represented as a list of string
 
 
 
-#7.	SonarQube – Metrics: 
+# 7.	SonarQube – Metrics: 
 
 
 With SonarQube we can check how much the code is clean from bugs and vulnrability 
@@ -193,7 +197,7 @@ And the result will be like this :
 
 
 
-#8.	**Clean Code Development:**
+# 8.	**Clean Code Development:**
 
 Writing any software is the most complicated endeavors for human, as Bidan Kernigan the co-author of the AWK PL who summed up the true nature of software development in his book, said
 "Controlling complexity is the essence of software development. The harsh reality of real world software development is that software is often created with intentional, or unintentional, complexity and a disregard for maintainability, testability, and quality. The end result of this unfortunate reality is software that can become increasingly difficult and expensive to maintain and that fails sporadically and even spectacularly.".
@@ -253,7 +257,7 @@ Always make hypnosis to check if there is any problem and solution for it: run t
 
 
 
-    # Check if the player could win on their next move, and block them.
+    #Check if the player could win on their next move, and block them.
     for i in range(1, 10):
         copy = getboardCopy(board)
         if FreeSpace(copy, i):
@@ -261,16 +265,16 @@ Always make hypnosis to check if there is any problem and solution for it: run t
             if isWinner(copy, playerletter):
                 return i
 
-    # Try to take one of the corners, if they are free.
+    #Try to take one of the corners, if they are free.
     move = chooseRandomMoveFromList(board, [ 1, 3, 7, 9 ])
     if move != None:
         return move
 
-    # Try to take the center, if it is free.
+    #Try to take the center, if it is free.
     if FreeSpace(board, 5):
         return 5
 
-    # Move on one of the sides.
+    #Move on one of the sides.
     return chooseRandomMoveFromList(board, [ 2, 4, 6, 8 ])
 
 
@@ -281,7 +285,7 @@ Always make hypnosis to check if there is any problem and solution for it: run t
 
 
 
-#9.	Continuous Delivery :
+# 9.	Continuous Delivery :
 
 
 With the help of the Git plugin Jenkins can easily pull source code from any Git repository that the Jenkins build node can access.
@@ -297,7 +301,7 @@ With the help of the Git plugin Jenkins can easily pull source code from any Git
 
 
 
-10.	AOP jointpoints
+# 10.	AOP jointpoints
 
 The below figure shows Separate deferent concerns of implementing the Observer pattern in the context of TicTacToe a board game of Two or more players each modify the board game and need to be notified whenever some of the other players has changed the board, this is one of the powerful illustration of the AOP technique.
 
@@ -320,7 +324,7 @@ The connector represents communication channels between board game and player, w
 
 
 
-#11.	 DSL Demo example
+# 11.	 DSL Demo example
 
 Domain Specific Languages can serve all sort of purposes. They can be used in different contexts and by different kinds of users. Some DSLs are intended to be used by programmers, and therefore are more technical, while others are intended to be used by someone who is not a programmer and therefore they use less geeky concepts and syntax.
 
@@ -360,14 +364,14 @@ From that code, we will get the following sequence diagram:
 ***
 
 
-#12.	Logic Solver:
+# 12.	Logic Solver:
 
 
 ***
 
 
 
-#13.	Scala Code:
+# 13.	Scala Code:
 
 
 
