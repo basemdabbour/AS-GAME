@@ -29,15 +29,15 @@ GitHub : https://github.com/basemdabbour/AS-GAME
 # Index
 
 
-# 1.	........Introduction 
-# 2.	.........Sample of Run Program 
-# 3.	.........Source Code 
-# 4.	.........Game Design
-# 5.	.........Details of the Program
-# 6.	.........UML Diagrams 
-# 7.	.........Metrics (SonarQube, SonarCould,Sonar, Sonarlint)
-# 8.	.........Clean Code development
-# 9.	......... Continuous Delivery
+# 1.	Introduction 
+# 2.	Sample of Run Program 
+# 3.	Source Code 
+# 4.	Game Design
+# 5.	Details of the Program
+# 6.	UML Diagrams 
+# 7.	Metrics (SonarQube, SonarCould, Sonarlint)
+# 8.	Clean Code development
+# 9.	Continuous Delivery
 # 10.	AOP jointpoints 
 # 11.	DSL Demo example
 # 12.	Logic Solver 
