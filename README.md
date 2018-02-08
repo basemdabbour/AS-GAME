@@ -1,4 +1,4 @@
-#Tic Tac Toe – Game Project 
+# Tic Tac Toe – Game Project 
 
 
 
@@ -34,7 +34,7 @@
 
 
 Tic Tac Toe is a game against a simple artificial intelligence. An artificial intelligence (or AI) is a computer program that can intelligently respond to the player’s moves. This game doesn’t introduce any complicated new concepts. The artificial intelligence that plays Tic Tac Toe is really just a few lines of code..
-Back when we were a kids , two children’s used to play Tic Tac toy with paper and pencil when one of them is “X“ and the other is “O“ and if one of the players get three of the their marks on the board in row or column or one of the two diagonals , they WIN 
+Back when we were a kids , two children’s used to play Tic Tac Toe with paper and pencil when one of them is “X“ and the other is “O“ and if one of the players get three of the their marks on the board in row or column or one of the two diagonals , they WIN 
 And when the board fills up with neither player winning the game break even.
 
 
