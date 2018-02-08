@@ -22,9 +22,8 @@ Student : Basem Dabbour
 # 9.	......... Continous Delivery
 # 10.	AOP jointpoints 
 # 11.	DSL Demo example
-# 12.	Functional Programing 
-# 13.	Logic Solver 
-# 14.	Scala Code 
+# 12.	Logic Solver 
+# 13.	Scala Code 
 
 
 
@@ -178,14 +177,46 @@ With the help of the Git plugin Jenkins can easily pull source code from any Git
 ![image](https://user-images.githubusercontent.com/32684082/35982831-06fbca5a-0cf1-11e8-95b0-9fb917371e8e.png)
 
 
-# 10.	AOP jointpoints
+# 10.	AOP jointpoints:
 
-# 11.	 DSL Demo example
+The below figure shows Separate deferent concerns of implementing the Observer pattern in the context of TicTacToe a board game of Two or more players each modify the board game and need to be notified whenever some of the other players has changed the board, this is one of the powerful illustration of the AOP technique.
+The big picture was broken into smaller pieces of concern which improve the programming style.
+
+![image](https://user-images.githubusercontent.com/32684082/35988205-1c794a4e-0cfe-11e8-8a35-ec0f0e8e2936.png)
+
+In this figure, we can consider the component based approach for implementing an observer pattern. The board game and players are components, which means that in the board game, each player is an observer who needs to be notified whenever the board game is changed by another player. However it’s connecting the board and the player by a notification bus as shown in (a) which describe the connectors between the components. 
+The connector represents communication channels between board game and player, whenever a change happened, it will update the player about that change.  
 
 
-# 12.	Functional Programing 
+# 11.	 DSL Demo example:
 
-# 13.	Logic Solver
+Domain Specific Languages can serve all sort of purposes. They can be used in different contexts and by different kinds of users. Some DSLs are intended to be used by programmers, and therefore are more technical, while others are intended to be used by someone who is not a programmer and therefore they use less geeky concepts and syntax.
+There are several examples of public DSL which are used a lot :
+•	DOT – A DSL to define graphs
+•	Sed – A DSL to define text transformation
+•	Gawk – A DSL to print and process text
+•	Website-spec – A DSL for functional web testing
+•	SQL – databases
+•	HTML – web layout
+•	UML – visual modeling
+•	PlantUML – A DSL to draw UML diagrams :PlantUML Can be used to define UML diagrams of different kinds. For example we can define a sequence diagram as per the following DSL Demo example snippet:
 
-# 14.	Scala Code
+@startuml
+actor Customer1     
+actor Customer2   
+database database  
+Customer1 -> Supplier: Ask a refund    
+Supplier -> database: Verify the data  
+Supplier -> MyUser: Issue a refund  
+@enduml
+
+From that code, we will get the following sequance diagram :
+
+![image](https://user-images.githubusercontent.com/32684082/35988305-5db0813a-0cfe-11e8-80ac-37fe8044866e.png)
+
+
+
+# 12.	Logic Solver:
+
+# 13.	Scala Code:
 
