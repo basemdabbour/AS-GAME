@@ -1,28 +1,6 @@
-# AS-GAME
+#Tic Tac Toe – Game Project 
 
 
-
-
-
-
-
-Beuth University of Applied Science
-
-Advance Software – Game Project 
-
-Prof. Dr. Edlich Stefan 
-
-Student: Basem Dabbour
-
-GitHub : https://github.com/basemdabbour/AS-GAME
-
-
-
-
-
-
-
-# Tic Tac Toe – Game Project 
 
 
 
