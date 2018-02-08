@@ -203,13 +203,21 @@ There are several examples of public DSL which are used a lot :
 
 
 @startuml
+
 actor Customer1
+
 actor Customer2
+
 database database
-Customer1 -> Supplier: Ask a refund  
+
+Customer1 -> Supplier: Ask a refund 
+ 
 Supplier -> database: Verify the data
+
 Supplier -> MyUser: Issue a refund
+
 @enduml
+
 
 From that code, we will get the following sequance diagram :
 
