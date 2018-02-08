@@ -1,6 +1,11 @@
 # AS-GAME
 # My Github repository - master project
 
+
+
+
+
+
 Beuth University of Applied Science
 
 Advance Software – Game Project 
@@ -11,9 +16,18 @@ Student: Basem Dabbour
 
 GitHub : https://github.com/basemdabbour/AS-GAME
 
+
+
+
+
+
+
 # Tic Tac Toe – Game Project 
 
+
+
 # Index
+
 
 # 1.	........Introduction 
 # 2.	.........Sample of Run Program 
@@ -32,7 +46,8 @@ GitHub : https://github.com/basemdabbour/AS-GAME
 
 
 
-***
+
+
 
 
 
@@ -46,7 +61,8 @@ And when the board fills up with neither player winning the game break even.
 
 
 
-***
+
+
 
 
 
@@ -59,7 +75,8 @@ And when the board fills up with neither player winning the game break even.
 
 
 
-***
+
+
 
 
 
@@ -69,7 +86,7 @@ Please copy the below code to your shell and run it:
 
 
 
-***
+
 
 
 
@@ -91,7 +108,7 @@ The below figure shows how the Flowchart for this Tic Tac Toe looks like, in thi
 
 
 
- ***
+ 
  
  
 
@@ -99,6 +116,7 @@ The below figure shows how the Flowchart for this Tic Tac Toe looks like, in thi
 
 
 In this program, the Tic Tac Toe board is simply represented as a list of strings. Each string will represent one of the nine spaces on the board (either be 'X' for the X player, 'O' for the O player, or a single space ' ' for a blank space.). To make it easier to remember which index in the list is for which space, same as the numbers on a keyboard’s number keypad, as per the Figure 4 we can also agree that list of 10 strings stored in variable board will make board [5] in center, board [1] in bottom left and board [6] in the right side and so on so forth 
+
 
 
 
@@ -141,7 +159,6 @@ In this program, the Tic Tac Toe board is simply represented as a list of string
 •	**isboardFull():** Function that returns True in case all moves(10 strings 1-9, index 0 not used) has already passed through with “X” or “O” , and False in case of any spaces found not filled yet , in other words , isbordFull() invert function of FreeSpace().
 
 
-***
 
 
 # 6.	**UML Diagrams:**
@@ -161,7 +178,7 @@ In this program, the Tic Tac Toe board is simply represented as a list of string
 
 
 
-***
+
 
 
 
@@ -193,7 +210,8 @@ And the result will be like this :
 
 
 
-***
+
+
 
 
 
@@ -280,7 +298,7 @@ Always make hypnosis to check if there is any problem and solution for it: run t
 
 
 
-***
+
 
 
 
@@ -296,7 +314,7 @@ With the help of the Git plugin Jenkins can easily pull source code from any Git
 
 
 
-***
+
 
 
 
@@ -320,7 +338,7 @@ In this figure, we can consider the component based approach for implementing an
 The connector represents communication channels between board game and player, whenever a change happened, it will update the player about that change.  
 
 
-***
+
 
 
 
@@ -361,13 +379,14 @@ From that code, we will get the following sequence diagram:
 
 
 
-***
+
 
 
 # 12.	Logic Solver:
 
 
-***
+
+
 
 
 
