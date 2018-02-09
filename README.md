@@ -84,7 +84,7 @@ In this program, the Tic Tac Toe board is simply represented as a list of string
 •	**[GameBoard( )](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L6) ** function to draw the board of strings (1 till 9).
 
 
-•	**i[inputPlayerletter( )](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L25):** function so the player can choose which letter will start with “X” or “O” , and the computer will get the second letter.
+•	** [inputPlayerletter( )](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L25) ** function so the player can choose which letter will start with “X” or “O” , and the computer will get the second letter.
 
 
 •	**[whoGoesFirst()](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L40):** function to randomly choose the player who will go first in the game , in this case player or computer 
