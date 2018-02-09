@@ -387,8 +387,7 @@ There are several examples of public DSL which are used a lot as per the followi
 •	PlantUML – A DSL to draw UML diagrams: PlantUML Can be used to define UML diagrams of different kinds.
 
 
-For example using **[PlantUML](http://plantuml.com/)**, we can define a [Sequence Diagram](http://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000) as per the following DSL Demo example snippet:
-
+For example using **[PlantUML](http://plantuml.com/)**, we can define a [Sequence Diagram](http://plantuml.com/sequence-diagram) as per the following DSL Demo example snippet:
 ```
 
 
