@@ -36,11 +36,30 @@ And when the board fills up with neither player winning the game break even.
 
 
 
-# 3.	The Tic Tac Toe source code
-Please copy the below code to your shell and run it
-[source code]( https://github.com/basemdabbour/AS-GAME/blob/master/tictactoy-DS-AS-2018.py)
+# 3.	How to Run ?
 
 
+1)	Download Pycharm Professional from here 
+
+2)	Install it on your local host 
+
+3)	Open Pycharm after the installation 
+
+4)	Create new project by clicking on File - > New Project, then in New Project panel choose (Pure Python) and location path of your project in the directory that you want 
+
+5)	Click on Create and wait couple of minutes to create virtual environment
+ 
+6)	Right click on the project name that contain the path, it will look like this (test C:\Users\...\test, which test is the name of the project 
+
+7)	Choose New -> Python file
+
+8)	[Click Here to check the source code ](https://github.com/basemdabbour/AS-GAME/blob/master/tictactoe-DS-AS-2018.py)
+
+9) Copy and paste the code to Python file that you created 
+
+10) Click Run
+
+11) Have Fun!
 
 
 
