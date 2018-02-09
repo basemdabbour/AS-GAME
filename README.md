@@ -435,7 +435,7 @@ EXIT
 
 
 
-> **Note**: The methods **addChoice **and **hasAWinner **are just templates to explain the idea without implementation.
+> **Note**: The methods **addChoice** and **hasAWinner** are just templates to explain the idea without implementation.
 
 
 
