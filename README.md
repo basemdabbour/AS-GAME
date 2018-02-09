@@ -2,7 +2,7 @@
 
 
 
-# 1.	Introduction: 
+# 1.	Introduction 
 
 
 
@@ -31,7 +31,7 @@ And when the board fills up with neither player winning the game break even.
 
 
 
-# 3.	The Tic Tac Toe source code:
+# 3.	The Tic Tac Toe source code
 
 
 
@@ -46,7 +46,7 @@ Please copy the below code to your shell and run it:
 
 
 
-# 4.	Game design:
+# 4.	Game design
 
 
 The below figure shows how the Flowchart for this Tic Tac Toe looks like, in this game the player (you) will choose between "X" and "O" and who take the first turn will be randomly chosen by using random module in python “ import random ”
@@ -68,7 +68,7 @@ The below figure shows how the Flowchart for this Tic Tac Toe looks like, in thi
  
  
 
-# 5.	Game in details with functions :
+# 5.	Game in details with functions
 
 
 In this program, the Tic Tac Toe board is simply represented as a list of strings. Each string will represent one of the nine spaces on the board (either be 'X' for the X player, 'O' for the O player, or a single space ' ' for a blank space.). To make it easier to remember which index in the list is for which space, same as the numbers on a keyboard’s number keypad, as per the Figure 4 we can also agree that list of 10 strings stored in variable board will make board [5] in center, board [1] in bottom left and board [6] in the right side and so on so forth 
@@ -79,55 +79,55 @@ In this program, the Tic Tac Toe board is simply represented as a list of string
 **Functions:**
 
 
-•	**GameBoard() :** function to draw the board of strings (1 till 9).
+•	**GameBoard()** function to draw the board of strings (1 till 9).
 
 
-•	**inputPlayerletter():** function so the player can choose which letter will start with “X” or “O” , and the computer will get the second letter.
+•	**inputPlayerletter()** function so the player can choose which letter will start with “X” or “O” , and the computer will get the second letter.
 
 
-•	**whoGoesFirst():** function to randomly choose the player who will go first in the game , in this case player or computer 
+•	**whoGoesFirst()** function to randomly choose the player who will go first in the game , in this case player or computer 
 
 
-•	**playAgain():** Function to repeat the game again by using “random.randint(0, 1) == 0” , if (0) the computer will have the first move , (1) the player will have the first move.
+•	**playAgain()** function to repeat the game again by using “random.randint(0, 1) == 0” , if (0) the computer will have the first move , (1) the player will have the first move.
 
 
-•	**MakeAMove():** Function to pass the parameter for the borad[ ] with chosen letter by player or computer.
+•	**MakeAMove():** function to pass the parameter for the borad[ ] with chosen letter by player or computer.
 
 
-•	**isWinner():** Function with long return line to check if there is three spaces in board filled with same letter horizontally , vertically or diagonally.
+•	**isWinner()** function with long return line to check if there is three spaces in board filled with same letter horizontally , vertically or diagonally.
 
 
-•	**getboardCopy():** Function to make copy of the board of TTT in the game , making append to the board with new copy of it without changing the original board and moves has been played before.
+•	**getboardCopy()** function to make copy of the board of TTT in the game , making append to the board with new copy of it without changing the original board and moves has been played before.
 
 
-•	**FreeSpace():** Function to check if the entire board filled with sting or not , make sure to choose the right empty slot to make a move, otherwise a message will pop up to ask for available move.
+•	**FreeSpace()** function to check if the entire board filled with sting or not , make sure to choose the right empty slot to make a move, otherwise a message will pop up to ask for available move.
 
 
-•	**getPlayerMove():** Function to ask the player to enter the number of the space that wants to move on , the (while) loop here makes sure that the player is choosing the empty space each move and check if the space is already taken before or not by calling FreeSpace() , and finally return the move as integer from string.
+•	**getPlayerMove()** function to ask the player to enter the number of the space that wants to move on , the (while) loop here makes sure that the player is choosing the empty space each move and check if the space is already taken before or not by calling FreeSpace() , and finally return the move as integer from string.
 
 
-•	 **chooseRandomMoveFromList():** Function will first check that the space is valid to make a move on , and returns a valid move from the passed list on the passed board and None in case of no valid/true move made.
+•	 **chooseRandomMoveFromList()** function will first check that the space is valid to make a move on , and returns a valid move from the passed list on the passed board and None in case of no valid/true move made.
 
 
-•	**getComputerMove():** The algorithm which has been used in TTT game is simple algorithm to compute the results , this algorithm is implemented and used in the getComputerMove() function.
+•	**getComputerMove()** function, the algorithm which has been used in TTT game is simple algorithm to compute the results , this algorithm is implemented and used in the getComputerMove() function.
 
 
-•	**isboardFull():** Function that returns True in case all moves(10 strings 1-9, index 0 not used) has already passed through with “X” or “O” , and False in case of any spaces found not filled yet , in other words , isbordFull() invert function of FreeSpace().
+•	**isboardFull() ** Function that returns True in case all moves(10 strings 1-9, index 0 not used) has already passed through with “X” or “O” , and False in case of any spaces found not filled yet , in other words , isbordFull() invert function of FreeSpace().
 
 
 
 
-# 6.	**UML Diagrams:**
+# 6.	**UML Diagrams**
 
 
-•	Class Diagram:
+•	Class Diagram
 
 
   ![image](https://user-images.githubusercontent.com/32684082/35982366-ebdcec96-0cef-11e8-9f3b-fd4dcd2a09e6.png)
   
   
   
-•	Use Case Diagram :
+•	Use Case Diagram
 
  
 ![image](https://user-images.githubusercontent.com/32684082/35982396-fefbcbf8-0cef-11e8-9bc1-ff4015bc3325.png)
@@ -138,7 +138,7 @@ In this program, the Tic Tac Toe board is simply represented as a list of string
 
 
 
-# 7.	SonarQube – Metrics: 
+# 7.	SonarQube – Metrics
 
 
 With SonarQube we can check how much the code is clean from bugs and vulnrability 
@@ -151,14 +151,14 @@ By creating new project with token name either existing one or generate new whic
 
 
 
-The following command will scan the code and do the test:
+The following command will scan the code and do the test
 
 
 ` sonar-scanner.bat -Dsonar.projectKey=AS-GAME -Dsonar.organization=basemdabbour-github -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=ca8628234e17b3cb7011afc999c047e0226ac2d7 `
 
 
 
-And the result will be like this :
+And the result will be like this
 
 
 
@@ -171,13 +171,13 @@ And the result will be like this :
 
 
 
-# 8.	**Clean Code Development:**
+# 8.	**Clean Code Development**
 
 Writing any software is the most complicated endeavors for human, as Bidan Kernigan the co-author of the AWK PL who summed up the true nature of software development in his book, said
 "Controlling complexity is the essence of software development. The harsh reality of real world software development is that software is often created with intentional, or unintentional, complexity and a disregard for maintainability, testability, and quality. The end result of this unfortunate reality is software that can become increasingly difficult and expensive to maintain and that fails sporadically and even spectacularly.".
 
 
-**1.	Always use Class-functions approach:**
+**8.1.	Always use Class-functions approach**
 
 Using function is a block of reusable line of codes that is used to perform a specific action and its one of the important steps when writing software code in any programing language. 
 List of advantages :
@@ -190,7 +190,7 @@ You can see all TicTacToy functions previouslly in section 5 - Game In Details.
 
 
 
-**2.	Use modeul carefully :**
+**8.2.	Use modeul carefully**
 
 A module can contain executable statements as well as function definitions. 
 These statements are intended to initialize the module. They are executed only the first time the module name is encountered in an import statement.
@@ -213,18 +213,18 @@ if len(possibLMoves) != 0:
 	
 	
 	
-**3.	Organize your code:**
+**8.3.	Organize your code**
 
 Don‘t make your code messy especially if you are writing thousands of lines of code, organize your python code by listing all functions first in the body and then the main
 
 
 
-**4.	Use #Comments:**
+**8.4.	Use #Comments**
 
 Always use #comments in your project to describe what this lines of code do?, not just for your future reference, but also for other people who might end up reading your project and evaluating it.
 
 
-**5.	 A clean code hypothetical test:**
+**8.5.	 A clean code hypothetical test**
 
 Always make hypnosis to check if there is any problem and solution for it: run tests on your code multiple times with different approach to insure and prove that your software can continuously works without breaking down so bad such as the following snippets code:
 
@@ -259,7 +259,7 @@ Always make hypnosis to check if there is any problem and solution for it: run t
 
 
 
-# 9.	Continuous Delivery :
+# 9.	Continuous Delivery
 
 
 With the help of the Git plugin Jenkins can easily pull source code from any Git repository that the Jenkins build node can access.
@@ -328,7 +328,7 @@ For example using PlantUML, we can define a sequence diagram as per the followin
 
 
 
-From that code, we will get the following sequence diagram:
+From that code, we will get the following sequence diagram
  
 
 ![image](https://user-images.githubusercontent.com/32684082/35988305-5db0813a-0cfe-11e8-80ac-37fe8044866e.png)
@@ -338,7 +338,7 @@ From that code, we will get the following sequence diagram:
 
 
 
-# 12.	Logic Solver:
+# 12.	Logic Solver
 
 
 
@@ -346,7 +346,7 @@ From that code, we will get the following sequence diagram:
 
 
 
-# 13.	Scala Code:
+# 13.	Scala Code
 
 
 
