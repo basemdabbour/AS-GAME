@@ -397,7 +397,7 @@ In my code, I am focusing on two player games where Human-Player = +1, and Compu
 [click here to check the full research article about MM algorithm ](https://www.neverstopbuilding.com/blog/2013/12/13/tic-tac-toe-understanding-the-minimax-algorithm13)
 
 
-**How it works? **
+**How it works?**
 
 a)	We create a tree of all possible moves for all players to a certain depth.  
 
