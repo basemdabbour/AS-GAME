@@ -307,6 +307,15 @@ With the help of the [Git plugin](https://wiki.jenkins-ci.org/display/JENKINS/Gi
 
 # 10.	AOP jointpoints
 
+
+AOP is very useful to avoid cross-cutting features that affect multiple components of the system.
+Some examples are logging, timing, security authorization, etc.
+In the case of Tic Tac Toe we can use AOP to add logging to the code, so instead of adding log.print to each function in the program we can define one logging Aspect and define a joint-point of all the main functions that we need to add log to.
+
+
+
+
+
 The below figure shows Separate deferent concerns of implementing the Observer pattern in the context of TicTacToe a board game of Two or more players each modify the board game and need to be notified whenever some of the other players has changed the board, this is one of the powerful illustration of the AOP technique.
 
 
@@ -390,13 +399,43 @@ Partner2-> Customer2: Issue a license with invoice
 
 
 
-From that code, we will get the following sequence diagram
- 
-
-![image](https://user-images.githubusercontent.com/32684082/35988305-5db0813a-0cfe-11e8-80ac-37fe8044866e.png)
+Click [Here](http://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000) and copy and past the above code in 
+the PlantUML shell, you will get the following sequence diagram as output
 
 
 
+![dsl-sd](https://user-images.githubusercontent.com/32684082/36041661-858f4b48-0dc9-11e8-8a99-06271f09d57f.png)
+
+
+
+
+We can define a DSL for Tic Tac Toe game definition and playing, let's say we want to extend Tic Tac Toe to support
+user defined game size and number of players:
+
+```
+
+
+GAME 5X5
+PLAYERS 3
+PLAYER_SIGN 1 *
+PLAYER_SIGN 2 O
+PLAYER_SIGN 2 &
+START
+
+PLAYER_CHOICE 1 (2,2)
+PLAYER_CHOICE 2 (3,4)
+.
+.
+.
+.
+EXIT
+
+
+```
+
+
+
+> **Note**: The methods **addChoice **and **hasAWinner **are just templates to explain the idea without implementation.
 
 
 
@@ -485,5 +524,32 @@ def MaxScore(board):
 
 
 
+This following is sample data structure of Tic Tac Toe game:
+ 
+```
+
+
+case class Point(x:Int, y:Int)
+
+case class Choice(p:Player, p:Point)
+
+case class Player(name:String, sign:Char)
+
+case class Board(width:Int, height:Int)
+
+class Game(board:Board, p1: Player, p2:Player, choices: List[Choice]) {
+  addChoice(c:Choice):Game {
+  
+  }
+
+  hasAWinner():Boolean {
+  
+  }
+}
+
+
+```
+
+Note: The methods addChoice and hasAWinner are just templates to explain the idea without implementation.
 
 
