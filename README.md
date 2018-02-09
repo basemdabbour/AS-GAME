@@ -435,7 +435,7 @@ EXIT
 
 
 
-> **Note**: The methods **addChoice** and **hasAWinner** are just templates to explain the idea without implementation.
+> **Note** The methods **addChoice** and **hasAWinner** are just templates to explain the idea without implementation.
 
 
 
@@ -550,6 +550,6 @@ class Game(board:Board, p1: Player, p2:Player, choices: List[Choice]) {
 
 ```
 
-Note: The methods addChoice and hasAWinner are just templates to explain the idea without implementation.
+> **Note** The methods addChoice and hasAWinner are just templates to explain the idea without implementation.
 
 
