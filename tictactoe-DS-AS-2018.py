@@ -1,7 +1,7 @@
 # Tic Tac Toe
 
 import random
-
+from copy import deepcopy
 
 def Gameboard(board):
     # This function prints out the board that it was passed.
@@ -203,3 +203,6 @@ while True:
 
     if not playAgain():
         break
+
+
+

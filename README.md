@@ -2,12 +2,17 @@
 
 
 
-# 1.	Introduction 
+
+
+
+
+
+# 1.	Introduction: 
 
 
 
 Tic Tac Toe is a game against a simple artificial intelligence. An artificial intelligence (or AI) is a computer program that can intelligently respond to the player’s moves. This game doesn’t introduce any complicated new concepts. The artificial intelligence that plays Tic Tac Toe is really just a few lines of code..
-Back when we were a kids , two children’s used to play Tic Tac Toe with paper and pencil when one of them is “X“ and the other is “O“ and if one of the players get three of the their marks on the board in row or column or one of the two diagonals , they WIN 
+Back when we were a kids , two children’s used to play Tic Tac toy with paper and pencil when one of them is “X“ and the other is “O“ and if one of the players get three of the their marks on the board in row or column or one of the two diagonals , they WIN 
 And when the board fills up with neither player winning the game break even.
 
 
@@ -32,13 +37,8 @@ And when the board fills up with neither player winning the game break even.
 
 
 # 3.	The Tic Tac Toe source code
-
-
-
-Please copy the below code to your shell and run it:
-
-
-[source code]( https://github.com/basemdabbour/AS-GAME/blob/master/tictactoe-DS-AS-2018.py)
+Please copy the below code to your shell and run it
+[source code]( https://github.com/basemdabbour/AS-GAME/blob/master/tictactoy-DS-AS-2018.py)
 
 
 
@@ -51,12 +51,14 @@ Please copy the below code to your shell and run it:
 
 The below figure shows how the Flowchart for this Tic Tac Toe looks like, in this game the player (you) will choose between "X" and "O" and who take the first turn will be randomly chosen by using random module in python “ import random ”
 
+**Tic Tac Toe flowchart:**
 
-![image](https://user-images.githubusercontent.com/32684082/35982148-5a052e5a-0cef-11e8-891e-e793189dffb4.png)
+![ttt-flowchart1](https://user-images.githubusercontent.com/32684082/36035101-40121400-0db6-11e8-810a-a12a35f20aba.png)
 
 
 
->Note: the board is numbered as keyboard number pad as per the following sample:
+
+>Note: the board is numbered as keyboard number pad as per the following sample
 
  
  ![image](https://user-images.githubusercontent.com/32684082/35982237-94c08dc8-0cef-11e8-864a-6ec0f75482b2.png)
@@ -76,43 +78,43 @@ In this program, the Tic Tac Toe board is simply represented as a list of string
 
 
 
-**Functions:**
+**Functions**
 
 
-•	**GameBoard()** function to draw the board of strings (1 till 9).
+•	**[GameBoard( )](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L6) ** function to draw the board of strings (1 till 9).
 
 
-•	**inputPlayerletter()** function so the player can choose which letter will start with “X” or “O” , and the computer will get the second letter.
+•	**i[inputPlayerletter( )](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L25):** function so the player can choose which letter will start with “X” or “O” , and the computer will get the second letter.
 
 
-•	**whoGoesFirst()** function to randomly choose the player who will go first in the game , in this case player or computer 
+•	**[whoGoesFirst()](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L40):** function to randomly choose the player who will go first in the game , in this case player or computer 
 
 
-•	**playAgain()** function to repeat the game again by using “random.randint(0, 1) == 0” , if (0) the computer will have the first move , (1) the player will have the first move.
+•	**[playAgain()](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L48)** Function to repeat the game again by using “random.randint(0, 1) == 0” , if (0) the computer will have the first move , (1) the player will have the first move.
 
 
-•	**MakeAMove():** function to pass the parameter for the borad[ ] with chosen letter by player or computer.
+•	**[MakeAMove()](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L54)** Function to pass the parameter for the borad[ ] with chosen letter by player or computer.
 
 
-•	**isWinner()** function with long return line to check if there is three spaces in board filled with same letter horizontally , vertically or diagonally.
+•	**[isWinner()](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L58)** Function with long return line to check if there is three spaces in board filled with same letter horizontally , vertically or diagonally.
 
 
-•	**getboardCopy()** function to make copy of the board of TTT in the game , making append to the board with new copy of it without changing the original board and moves has been played before.
+•	**[getboardCopy()](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L73)** Function to make copy of the board of TTT in the game , making append to the board with new copy of it without changing the original board and moves has been played before.
 
 
-•	**FreeSpace()** function to check if the entire board filled with sting or not , make sure to choose the right empty slot to make a move, otherwise a message will pop up to ask for available move.
+•	**[FreeSpace()](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L83)** Function to check if the entire board filled with sting or not , make sure to choose the right empty slot to make a move, otherwise a message will pop up to ask for available move.
 
 
-•	**getPlayerMove()** function to ask the player to enter the number of the space that wants to move on , the (while) loop here makes sure that the player is choosing the empty space each move and check if the space is already taken before or not by calling FreeSpace() , and finally return the move as integer from string.
+•	**[getPlayerMove()](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L88)** Function to ask the player to enter the number of the space that wants to move on , the (while) loop here makes sure that the player is choosing the empty space each move and check if the space is already taken before or not by calling FreeSpace() , and finally return the move as integer from string.
 
 
-•	 **chooseRandomMoveFromList()** function will first check that the space is valid to make a move on , and returns a valid move from the passed list on the passed board and None in case of no valid/true move made.
+•	 **[chooseRandomMoveFromList()](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L99)** Function will first check that the space is valid to make a move on , and returns a valid move from the passed list on the passed board and None in case of no valid/true move made.
 
 
-•	**getComputerMove()** function, the algorithm which has been used in TTT game is simple algorithm to compute the results , this algorithm is implemented and used in the getComputerMove() function.
+•	**[getComputerMove()](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L113)** The algorithm which has been used in TTT game is simple algorithm to compute the results , this algorithm is implemented and used in the getComputerMove() function.
 
 
-•	**isboardFull() ** Function that returns True in case all moves(10 strings 1-9, index 0 not used) has already passed through with “X” or “O” , and False in case of any spaces found not filled yet , in other words , isbordFull() invert function of FreeSpace().
+•	**[isboardFull()](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L150)** Function that returns True in case all moves(10 strings 1-9, index 0 not used) has already passed through with “X” or “O” , and False in case of any spaces found not filled yet , in other words , isbordFull() invert function of FreeSpace().
 
 
 
@@ -120,14 +122,14 @@ In this program, the Tic Tac Toe board is simply represented as a list of string
 # 6.	**UML Diagrams**
 
 
-•	Class Diagram
+•	**Class Diagram**
 
 
   ![image](https://user-images.githubusercontent.com/32684082/35982366-ebdcec96-0cef-11e8-9f3b-fd4dcd2a09e6.png)
   
   
   
-•	Use Case Diagram
+•	**Use Case Diagram **
 
  
 ![image](https://user-images.githubusercontent.com/32684082/35982396-fefbcbf8-0cef-11e8-9bc1-ff4015bc3325.png)
@@ -154,7 +156,11 @@ By creating new project with token name either existing one or generate new whic
 The following command will scan the code and do the test
 
 
-` sonar-scanner.bat -Dsonar.projectKey=AS-GAME -Dsonar.organization=basemdabbour-github -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=ca8628234e17b3cb7011afc999c047e0226ac2d7 `
+```
+
+sonar-scanner.bat -Dsonar.projectKey=AS-GAME -Dsonar.organization=basemdabbour-github -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=ca8628234e17b3cb7011afc999c047e0226ac2d7 
+
+```
 
 
 
@@ -177,54 +183,78 @@ Writing any software is the most complicated endeavors for human, as Bidan Kerni
 "Controlling complexity is the essence of software development. The harsh reality of real world software development is that software is often created with intentional, or unintentional, complexity and a disregard for maintainability, testability, and quality. The end result of this unfortunate reality is software that can become increasingly difficult and expensive to maintain and that fails sporadically and even spectacularly.".
 
 
-**8.1.	Always use Class-functions approach**
+**1.	Always use Class-functions approach**
 
 Using function is a block of reusable line of codes that is used to perform a specific action and its one of the important steps when writing software code in any programing language. 
-List of advantages :
+List of advantages
+
 •	Reducing duplication of code.
+
 •	Decomposing complex problems into simpler pieces.
+
 •	Improving clarity of the code.
+
 •	Reuse of code.
+
 •	Information hiding.
+
+
 You can see all TicTacToy functions previouslly in section 5 - Game In Details.
 
 
 
-**8.2.	Use modeul carefully**
+**2.	Use modeul carefully **
 
 A module can contain executable statements as well as function definitions. 
 These statements are intended to initialize the module. They are executed only the first time the module name is encountered in an import statement.
 Each module has its own private symbol table, which is used as the global symbol table by all functions defined in the module.
-Advantages: 
+
+
+The Advantages
+
+
 •	No global namespace for objects 
+
+
 •	Python Modules are very easy to import and use 
 
-In Tic Tac Toe game, a "random" module is imported not just to reduce the lines of code, but also contain useful commands:
-•	random.randint(x,y) : to return random integer from interverl 
+In Tic Tac Toe game, a "random" module is imported not just to reduce the lines of code, but also contain useful commands as per the following
+
+
+•	[random.randint(x,y)](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L42) to return random integer from interverl 
+
+```
+
 if random.randint(0, 1) == 0:
         return 'computer'
     else:
         return 'player'
-•	random.choice(seq): to return random element from non empty sequance or list ,otherwise return None
+
+```
+
+•	[random.choice(seq)](https://github.com/basemdabbour/AS-GAME/blob/23ce88c3897411dd82584491265d6eab627a19de/tictactoe-DS-AS-2018.py#L108) to return random element from non empty sequance or list ,otherwise return None
+
+
+```
 if len(possibLMoves) != 0:
         return random.choice(possibLMoves)
     else:
         return None
 	
+```	
 	
-	
-**8.3.	Organize your code**
+**3.	Organize your code**
 
 Don‘t make your code messy especially if you are writing thousands of lines of code, organize your python code by listing all functions first in the body and then the main
 
 
 
-**8.4.	Use #Comments**
+**4.	Use #Comments**
 
 Always use #comments in your project to describe what this lines of code do?, not just for your future reference, but also for other people who might end up reading your project and evaluating it.
 
 
-**8.5.	 A clean code hypothetical test**
+**5.	 A clean code hypothetical test**
 
 Always make hypnosis to check if there is any problem and solution for it: run tests on your code multiple times with different approach to insure and prove that your software can continuously works without breaking down so bad such as the following snippets code:
 
@@ -262,7 +292,7 @@ Always make hypnosis to check if there is any problem and solution for it: run t
 # 9.	Continuous Delivery
 
 
-With the help of the Git plugin Jenkins can easily pull source code from any Git repository that the Jenkins build node can access.
+With the help of the [Git plugin](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin) Jenkins can easily pull source code from any Git repository that the Jenkins build node can access.
 
  
  
@@ -303,28 +333,46 @@ The connector represents communication channels between board game and player, w
 Domain Specific Languages can serve all sort of purposes. They can be used in different contexts and by different kinds of users. Some DSLs are intended to be used by programmers, and therefore are more technical, while others are intended to be used by someone who is not a programmer and therefore they use less geeky concepts and syntax.
 
 
-There are several examples of public DSL which are used a lot:
+There are several examples of public DSL which are used a lot as per the following 
 
-•	DOT – A DSL to define graphs
-•	Sed – A DSL to define text transformation
-•	Gawk – A DSL to print and process text
-•	Website-spec – A DSL for functional web testing
-•	SQL – databases
-•	HTML – web layout
-•	UML – visual modeling
+•	DOT – A DSL to define graphs.
+
+
+•	Sed – A DSL to define text transformation.
+
+
+•	Gawk – A DSL to print and process text.
+
+
+•	Website-spec – A DSL for functional web testing.
+
+
+•	SQL – databases.
+
+
+•	HTML – web layout.
+
+
+•	UML – visual modeling.
+
+
 •	PlantUML – A DSL to draw UML diagrams: PlantUML Can be used to define UML diagrams of different kinds.
 
-For example using PlantUML, we can define a sequence diagram as per the following DSL Demo example snippet:
 
-`@startuml`
-`actor Customer1`
-`actor customer2`
-`database database` 
-`Customer 1 -> Supplier : Request a refund`
-`Supplier -> database: Verify data`
-`Supplier -> Customer1`
-`Supplier -> Customer2`
-`@enduml`
+For example using **PlantUML**, we can define a sequence diagram as per the following DSL Demo example snippet:
+
+```
+@startuml
+actor Customer1
+actor customer2
+database database 
+Customer 1 -> Supplier : Request a refund
+Supplier -> database: Verify data
+Supplier -> Customer1
+Supplier -> Customer2
+@enduml
+
+```
 
 
 
@@ -340,8 +388,81 @@ From that code, we will get the following sequence diagram
 
 # 12.	Logic Solver
 
+By using The MiniMax (MM) Algorithm, an unbeatable game can be built 
+This algorithm designed for perfect information game (chess, checkers  ...etc.)
+This Algorithm could calculate all the possible moves available for the computer player and use some metric to determine the best possible move. 
+The following research which has been done In 2013, shows that the Minmax algorithm was the right for the job.
+In my code, I am focusing on two player games where Human-Player = +1, and Computer Player = -1 
+
+[click here to check the full research article about MM algorithm ](https://www.neverstopbuilding.com/blog/2013/12/13/tic-tac-toe-understanding-the-minimax-algorithm13)
 
 
+**How it works? **
+
+a)	We create a tree of all possible moves for all players to a certain depth.  
+
+b)	Each position or node of the tree holds a heuristic value which basically it’s the state of the game in single value, so who is wining and who is losing? , so if there is a situation on tree in which player1 wins it would be represented by positive infinity ,and if there is a situation where player2/computer wins it will be represented as negative infinity , and if neither so its either 0 or somewhere in between [-1,+1].
+
+c)	Now after the tree has been created, then the algorithm goes to the bottom of the tree and works its way upwards deciding what is the best possible move for each player when it is their turn, which means listing out all the bad moves for that player and then take step upwards and repeat it for the opposite player, so its like removing/filtering all the bad moves for both. 
+
+d)	From sys import maxsize : since computer cant assign value to infinity , instead we will import maxsize module in python , max size integer which is big number(positive) or small number(negative), and this value will be used to represent infinity or when the player wins or loses.
+
+e)	Create Node class , or you can name it anything other than “Node”, and this node will build the tree.
+
+f)	In this implementation , Human player is treated as maximizing player and the Computer is minimizing player and evaluating the board stats with minimizing player/computer.
+
+g)	In my code, function isWinner() checking if the player got the same letter 3 times in one of row/column/diagonal and returns true if the player won and false if player lost.
+
+
+With Minmax (MM) algorithm, adding two functions to calculate the _**minimum and maximum score**_ per the following sample and simple code to descripte the algorithm:
+
+
+```
+
+def MinScore(board):
+  if isWinner(board, 'x'):
+      return True
+  elif isWinner(board, 'o'):
+      return False
+  elif isboardFull(board):
+      return 0
+  else:
+    bestMoveValue = 100
+    move = 0
+    for i in range(1,10):
+        newBoard = MakeAMove(board, minPlayer, i)
+        if (newBoard==True):
+            predictedMoveValue = maxScore(newBoard)
+        if (predictedMoveValue < bestMoveValue):
+         bestMoveValue = predictedMoveValue
+            move = i
+    return bestMoveValue
+
+```
+
+
+```
+
+def MaxScore(board):
+  if isWinner(board, 'x'):
+      return True
+  elif isWinner(board, 'o'):
+      return False
+  elif isboardFull(board):
+      return 0
+  else:
+    bestMoveValue = 100
+    move = 0
+    for i in range(1,10):
+        newBoard = MakeAMove(board, minPlayer, i)
+        if (newBoard==True):
+            predictedMoveValue = maxScore(newBoard)
+        if (predictedMoveValue > bestMoveValue):
+         bestMoveValue = predictedMoveValue
+            move = i
+    return bestMoveValue
+
+```
 
 
 
