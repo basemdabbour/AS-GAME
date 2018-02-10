@@ -39,7 +39,7 @@ And when the board fills up with neither player winning the game break even.
 # 3.	How to Run ?
 
 
-1)	Download Pycharm Professional from here 
+1)	Download Pycharm Professional from [here](https://www.jetbrains.com/pycharm/download/#section=windows) 
 
 2)	Install it on your local host 
 
