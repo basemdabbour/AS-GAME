@@ -11,6 +11,7 @@ python:
   - "pypy2.7"
   - "pypy3.5"
 # command to install dependencies
-  - pip install random
+install:
+  - pip install AS-Game
 # command to run tests
 script: python tictactoe-DS-AS-2018.py
