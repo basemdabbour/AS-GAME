@@ -1,5 +1,5 @@
 language: python
-pycharm:
+python:
   - "2.6"
   - "2.7"
   - "3.4"
@@ -11,6 +11,6 @@ pycharm:
   - "pypy2.7"
   - "pypy3.5"
 # command to install dependencies
-  - pip install --upgrade -r requirements.txt
+  - pip install random
 # command to run tests
-script: python tictactoe-DS-AS-2018
+script: python tictactoe-DS-AS-2018.py
