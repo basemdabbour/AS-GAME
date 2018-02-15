@@ -1,0 +1,4 @@
+language: Python
+rvm:
+ - 3.3
+ - pycharm
