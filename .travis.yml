@@ -1,10 +1,12 @@
 language: python
-python:
+pycharm:
   - "2.6"
   - "2.7"
   - "3.4"
   - "3.5"
   - "3.6"
+  - "3.3"
+  - "1.4"
   # PyPy versions
   - "pypy2.7"
   - "pypy3.5"
