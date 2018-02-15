@@ -7,9 +7,7 @@ python:
   - "3.6"
   - "3.3"
   - "1.4"
-  # PyPy versions
-  - "pypy2.7"
-  - "pypy3.5"
+
 # command to install dependencies
 install:
   - pip install AS-Game
